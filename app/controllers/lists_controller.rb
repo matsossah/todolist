@@ -4,6 +4,7 @@ class ListsController < ApplicationController
   end
 
   def show          # GET /restaurants/:id
+    @list = List.find(params[:id])
   end
 
   def new           # GET /restaurants/new
